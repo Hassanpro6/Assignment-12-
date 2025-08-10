@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>M.Hassan</h1>
+    <h3>Roll no.00352</h3>
+    <script>
+        // // Number round off working
+let numAns = prompt("Enter any positive decimal number.")
+
+if(numAns < 0) {
+    alert("Please enter a positive number!")
+}
+else{
+
+alert(`number: ${numAns} `)
+
+let roundNum = Math.round(numAns)
+alert(`round off value: ${roundNum}`)
+
+let floorNum = Math.floor(numAns)
+alert(`floor value: ${floorNum}`)
+
+let cielNum = Math.ceil(numAns)
+alert(`ciel value: ${cielNum}`)
+}
+
+// Negative numbers roundoff working
+let negAns = prompt("Enter any negative floating point(Decimal) number.")
+
+if(negAns > 0) {
+    alert("Please enter a negative number!")
+}
+else{
+
+alert(`number: ${negAns}`)
+
+ let negRound = Math.round(negAns)
+ alert(`round off value: ${negRound}`)
+
+let negFloor = Math.floor(negAns)
+ alert(`floor value: ${negFloor}`)
+
+ let negCiel = Math.ceil(negAns)
+ alert(`ciel value: ${negCiel}`)
+
+
+}
+
+// Absolute numbers working
+let absNUm = prompt("Enter the number of which you want an absoloute number.")
+
+let numAbs = Math.abs(absNUm)
+alert(`Absolute number is ${numAbs}`)
+
+// Dice Rolling
+let ques1 = "Press enter to roll a dice"
+alert (ques1)
+
+let roll1 = Math.ceil(Math.random()*6)
+alert(`Your dice number is ${roll1}`)
+
+let yesNo = prompt("Do you want to Roll your second dice ?")
+
+if (yesNo === "Yes" || yesNo === "yes") {
+
+let roll2 = Math.ceil(Math.random()*6)
+alert(`Your dice number is ${roll2}`)
+
+} else {
+
+}
+
+// Head tail machine 
+let coin = "Press enter to do a toss..."
+alert(coin)
+
+let toss = Math.ceil(Math.random()*2)
+if ( toss === 1) {
+    alert ("The result is Tail!")
+}
+if ( toss === 2) {
+    alert ("The result is Head!")
+}
+
+// Random number generator
+
+let randNum = Math.ceil(Math.random()*100)
+
+alert(`The random number is ${randNum}`)
+
+// Weight checker
+
+let userin = prompt("Enter you age in kilograms")
+
+let Weight = parseFloat(userin)
+alert(`Your weight is ${Weight}`)
+
+// Secret Number guesser 
+
+let numgen = Math.ceil(Math.random()*10)
+
+alert("Press enter to play guess the number game")
+
+let usernum = prompt("Enter your guessed number...")
+
+if (usernum == numgen) {
+    alert ("Congratulations you guessed the correct number!")
+}
+else{
+    alert ("You didn'nt won! Better luck next time...")
+}
+    </script>
+</body>
+</html>
